@@ -1,16 +1,80 @@
 {
   "courses": [
-    { "id": 1, "title": "Angular Fundamentals", "description": "Learn the core concepts of Angular 8 including components, directives, and services from the ground up.", "duration": "4 weeks", "instructor": "Rahul Sharma", "category": "Frontend", "level": "Beginner", "image": "https://via.placeholder.com/300x180?text=Angular" },
-    { "id": 2, "title": "Node.js Backend Development", "description": "Build scalable REST APIs using Node.js, Express, and MongoDB with industry best practices.", "duration": "5 weeks", "instructor": "Priya Mehta", "category": "Backend", "level": "Intermediate", "image": "https://via.placeholder.com/300x180?text=NodeJS" },
-    { "id": 3, "title": "React from Scratch", "description": "Master React hooks, context API, and state management with Redux in this hands-on course.", "duration": "4 weeks", "instructor": "Amit Kulkarni", "category": "Frontend", "level": "Intermediate", "image": "https://via.placeholder.com/300x180?text=React" },
-    { "id": 4, "title": "Python for Data Science", "description": "Explore data analysis, visualization, and machine learning fundamentals using Python and Pandas.", "duration": "6 weeks", "instructor": "Sneha Patil", "category": "Data Science", "level": "Beginner", "image": "https://via.placeholder.com/300x180?text=Python" },
-    { "id": 5, "title": "UI/UX Design Principles", "description": "Learn design thinking, wireframing, prototyping, and usability testing for modern digital products.", "duration": "3 weeks", "instructor": "Kavya Nair", "category": "Design", "level": "Beginner", "image": "https://via.placeholder.com/300x180?text=UX" },
-    { "id": 6, "title": "DevOps with Docker & CI/CD", "description": "Containerize applications, set up CI/CD pipelines, and deploy using Docker and GitHub Actions.", "duration": "5 weeks", "instructor": "Arjun Verma", "category": "DevOps", "level": "Advanced", "image": "https://via.placeholder.com/300x180?text=DevOps" }
+    {
+      "id": 1,
+      "title": "Angular Fundamentals",
+      "description": "Learn the core concepts of Angular 8 including components, directives, and services from the ground up.",
+      "duration": "4 weeks",
+      "instructor": "Rahul Sharma",
+      "category": "Frontend",
+      "level": "Beginner",
+      "image": "https://via.placeholder.com/300x180?text=Angular"
+    },
+    {
+      "id": 2,
+      "title": "Node.js Backend Development",
+      "description": "Build scalable REST APIs using Node.js, Express, and MongoDB with industry best practices.",
+      "duration": "5 weeks",
+      "instructor": "Priya Mehta",
+      "category": "Backend",
+      "level": "Intermediate",
+      "image": "https://via.placeholder.com/300x180?text=NodeJS"
+    },
+    {
+      "id": 3,
+      "title": "React from Scratch",
+      "description": "Master React hooks, context API, and state management with Redux in this hands-on course.",
+      "duration": "4 weeks",
+      "instructor": "Amit Kulkarni",
+      "category": "Frontend",
+      "level": "Intermediate",
+      "image": "https://via.placeholder.com/300x180?text=React"
+    },
+    {
+      "id": 4,
+      "title": "Python for Data Science",
+      "description": "Explore data analysis, visualization, and machine learning fundamentals using Python and Pandas.",
+      "duration": "6 weeks",
+      "instructor": "Sneha Patil",
+      "category": "Data Science",
+      "level": "Beginner",
+      "image": "https://via.placeholder.com/300x180?text=Python"
+    },
+    {
+      "id": 5,
+      "title": "UI/UX Design Principles",
+      "description": "Learn design thinking, wireframing, prototyping, and usability testing for modern digital products.",
+      "duration": "3 weeks",
+      "instructor": "Kavya Nair",
+      "category": "Design",
+      "level": "Beginner",
+      "image": "https://via.placeholder.com/300x180?text=UX"
+    },
+    {
+      "id": 6,
+      "title": "DevOps with Docker & CI/CD",
+      "description": "Containerize applications, set up CI/CD pipelines, and deploy using Docker and GitHub Actions.",
+      "duration": "5 weeks",
+      "instructor": "Arjun Verma",
+      "category": "DevOps",
+      "level": "Advanced",
+      "image": "https://via.placeholder.com/300x180?text=DevOps"
+    }
   ],
   "users": [
-    { "id": 1, "name": "Soham Desai", "email": "soham@example.com", "password": "soham123" }
+    {
+      "id": 1,
+      "name": "stud_joyful",
+      "email": "stud@joyful.com",
+      "password": "12345"
+    }
   ],
   "enrollments": [
-    { "id": 1, "userId": 1, "courseId": 1, "enrolledAt": "2024-01-15" }
+    {
+      "id": 1,
+      "userId": 1,
+      "courseId": 1,
+      "enrolledAt": "2024-01-15"
+    }
   ]
 }

@@ -1,0 +1,14 @@
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 0.8rem 1.5rem;
+}
+.nav-link {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
