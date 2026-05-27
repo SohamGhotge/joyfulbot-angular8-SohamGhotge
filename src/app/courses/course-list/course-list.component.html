@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Available Courses</h2>
+  <div class="alert alert-success" *ngIf="successMessage">{{ successMessage }}</div>
+  <form [formGroup]="searchForm" class="mb-4">
+    <div class="input-group">
+      <input type="text" class="form-control" formControlName="query" placeholder="Search courses...">
+      <div class="input-group-append">
+        <span class="input-group-text">🔍</span>
+      </div>
+    </div>
+  </form>
+  <div *ngIf="isLoading" class="text-center py-5">
+    <div class="spinner-border text-primary"></div>
+  </div>
+  <div *ngIf="!isLoading && courses.length === 0" class="text-center py-5 text-muted">
+    <h5>No courses found.</h5>
+  </div>
+  <div class="row" *ngIf="!isLoading">
+    <div class="col-md-4 mb-4" *ngFor="let course of courses">
+      <app-course-card [course]="course" (enrolled)="onEnroll($event)"></app-course-card>
+    </div>
+  </div>
+</div>

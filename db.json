@@ -67,6 +67,12 @@
       "name": "stud_joyful",
       "email": "stud@joyful.com",
       "password": "12345"
+    },
+    {
+      "name": "soham",
+      "email": "sohamghotge@gmail.com",
+      "password": "soham@",
+      "id": 2
     }
   ],
   "enrollments": [
