@@ -1,27 +1,70 @@
-# StudentCoursePortal
+# Student Course Management Portal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+A Single Page Application built with Angular 8, Bootstrap 4, and JSON Server as a mock REST API — developed as part of the joyful.bot Angular 8 Fresher Assignment.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 8 (TypeScript)
+- Bootstrap 4.6
+- JSON Server (mock REST API)
+- RxJS
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Browse and search available courses
+- Register and login with form validation
+- Enroll and unenroll from courses
+- Personal dashboard showing enrolled courses
+- Protected routes using AuthGuard
+- UnsavedChangesGuard on register form
+- Custom TruncatePipe and HighlightDirective
+- HTTP Interceptor for Authorization header
+- Lazy loaded feature modules
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+src/app/
+├── core/            # Services, Guards, Interceptors, Models
+├── shared/          # Reusable components, Pipes, Directives
+├── auth/            # Login, Register (lazy loaded)
+├── courses/         # Course List, Card, Detail (lazy loaded)
+└── dashboard/       # User Dashboard (lazy loaded, protected)
+```
 
-## Running unit tests
+## Setup Instructions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
+- Node.js v10.x or v12.x
+- Angular CLI 8.x — `npm install -g @angular/cli@8`
+- JSON Server — `npm install -g json-server`
 
-## Running end-to-end tests
+### Run the project
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+# Clone the repo
+git clone https://github.com/SohamGhotge/joyfulbot-angular8-SohamGhotge.git
+cd joyfulbot-angular8-SohamGhotge
 
-## Further help
+# Install dependencies
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Start JSON Server (in one terminal)
+json-server --watch db.json --port 3000
+
+# Start Angular app (in another terminal)
+ng serve
+
+# Open browser
+http://localhost:4200
+```
+
+## Test Credentials
+
+| Email | Password |
+|-------|----------|
+| soham@example.com | soham123 |
+
+## Author
+
+Soham Ghotge — joyful.bot Angular 8 Assignment
