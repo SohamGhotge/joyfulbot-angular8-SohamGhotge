@@ -63,7 +63,7 @@ http://localhost:4200
 
 | Email | Password |
 |-------|----------|
-| soham@example.com | soham123 |
+| stud@joyful.com | 12345 |
 
 ## Author
 
