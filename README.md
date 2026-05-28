@@ -67,26 +67,28 @@ http://localhost:4200
 
 ## Screenshots
 
-### Navbar & Course List
-![Navbar](screenshots/01-navbar.png)
-![Course List](screenshots/02-course-list.png)
-![Course List 2](screenshots/03-course-list-2.png)
+### JSON Server
+![JSON Server - Courses](screenshots/json-server-courses.png)
+![JSON Server - Users](screenshots/json-server-users.png)
+![JSON Server - Enrollments](screenshots/json-server-enrollments.png)
+
+### Database (db.json)
+![db.json](screenshots/db-json.png)
+
+### Application UI
+![Navbar & Courses](screenshots/navbar-courses.png)
+![Courses & Footer](screenshots/courses-footer.png)
+![Course Detail](screenshots/course-detail.png)
 
 ### Auth
-![Login](screenshots/04-login.png)
-![Register](screenshots/05-register.png)
+![Login](screenshots/login.png)
+![Register](screenshots/register.png)
 
-### Course Detail & Enroll
-![Course Detail](screenshots/06-course-detail.png)
-![Enroll Success](screenshots/07-enroll-success.png)
-
-### Dashboard & Search
-![Dashboard](screenshots/08-dashboard.png)
-![Search](screenshots/09-search.png)
-![Unenroll](screenshots/10-unenroll.png)
+### Dashboard
+![Enrolled Courses in Dashboard](screenshots/dashboard-enrolled.png)
 
 ### 404 Page
-![404](screenshots/11-404.png)
+![404 Not Found](screenshots/404-not-found.png)
 
 ## Author
 
