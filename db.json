@@ -8,7 +8,7 @@
       "instructor": "Rahul Sharma",
       "category": "Frontend",
       "level": "Beginner",
-      "image": "https://via.placeholder.com/300x180?text=Angular"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Angular_gradient_logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "instructor": "Priya Mehta",
       "category": "Backend",
       "level": "Intermediate",
-      "image": "https://via.placeholder.com/300x180?text=NodeJS"
+      "image": "https://agilesparks.com/wp-content/uploads/2022/06/nodejs-new-pantone-black.png"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "instructor": "Amit Kulkarni",
       "category": "Frontend",
       "level": "Intermediate",
-      "image": "https://via.placeholder.com/300x180?text=React"
+      "image": "https://miro.medium.com/1*NJSv6DGoKTloI8d8im98zg.png"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "instructor": "Sneha Patil",
       "category": "Data Science",
       "level": "Beginner",
-      "image": "https://via.placeholder.com/300x180?text=Python"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/3840px-Python-logo-notext.svg.png"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "instructor": "Kavya Nair",
       "category": "Design",
       "level": "Beginner",
-      "image": "https://via.placeholder.com/300x180?text=UX"
+      "image": "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2024/11/101_UX_vs_UI_illustration_blog-1.png"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "instructor": "Arjun Verma",
       "category": "DevOps",
       "level": "Advanced",
-      "image": "https://via.placeholder.com/300x180?text=DevOps"
+      "image": "https://devopedia.org/images/article/54/7602.1513404277.png"
     }
   ],
   "users": [

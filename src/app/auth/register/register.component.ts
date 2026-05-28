@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
+import { CanComponentDeactivate } from '../../core/guards/unsaved-changes.guard';
 
 function passwordMatch(control: AbstractControl) {
   const password = control.get('password');
@@ -15,7 +16,7 @@ function passwordMatch(control: AbstractControl) {
 }
 
 @Component({ selector: 'app-register', templateUrl: './register.component.html', styleUrls: ['./register.component.scss'] })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent implements OnInit, CanComponentDeactivate {
   registerForm: FormGroup;
   errorMessage = '';
   isLoading = false;
@@ -39,6 +40,10 @@ export class RegisterComponent implements OnInit {
       () => { this.isLoading = false; this.router.navigate(['/auth/login']); },
       () => { this.isLoading = false; this.errorMessage = 'Registration failed. Try again.'; }
     );
+  }
+
+  canDeactivate(): boolean {
+    return !this.registerForm.dirty;
   }
 
   get name() { return this.registerForm.get('name'); }
