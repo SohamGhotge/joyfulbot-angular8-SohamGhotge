@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subject } from 'rxjs';
-import { debounceTime, distinctUntilChanged, takeUntil } from 'rxjs/operators';
+import { Observable, of, Subject } from 'rxjs';
+import { debounceTime, distinctUntilChanged, takeUntil, catchError } from 'rxjs/operators';
 import { CourseService } from '../../core/services/course.service';
 import { AuthService } from '../../core/services/auth.service';
 import { EnrollmentService } from '../../core/services/enrollment.service';
@@ -11,6 +11,7 @@ import { Course } from '../../core/models/course.model';
 @Component({ selector: 'app-course-list', templateUrl: './course-list.component.html', styleUrls: ['./course-list.component.scss'] })
 export class CourseListComponent implements OnInit, OnDestroy {
   courses: Course[] = [];
+  courses$: Observable<Course[]>;
   searchForm: FormGroup;
   isLoading = true;
   successMessage = '';
@@ -47,7 +48,10 @@ export class CourseListComponent implements OnInit, OnDestroy {
   loadCourses(query: string) {
     this.isLoading = true;
     const request = query ? this.courseService.searchCourses(query) : this.courseService.getCourses();
-    request.pipe(takeUntil(this.destroy$)).subscribe(
+    this.courses$ = request.pipe(
+      catchError(() => of([]))
+    );
+    this.courses$.pipe(takeUntil(this.destroy$)).subscribe(
       data => { this.courses = data; this.isLoading = false; },
       () => { this.isLoading = false; }
     );

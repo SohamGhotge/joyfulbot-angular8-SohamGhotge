@@ -16,7 +16,7 @@
     <h5>No courses found.</h5>
   </div>
   <div class="row" *ngIf="!isLoading">
-    <div class="col-md-4 mb-4" *ngFor="let course of courses">
+    <div class="col-md-4 mb-4" *ngFor="let course of courses$ | async">
       <app-course-card [course]="course" (enrolled)="onEnroll($event)"></app-course-card>
     </div>
   </div>
