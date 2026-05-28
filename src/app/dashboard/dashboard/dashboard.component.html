@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h2 class="mb-1">Welcome, {{ userName }} 👋</h2>
+  <p class="text-muted mb-4">You are enrolled in {{ enrolledCourses.length }} course(s).</p>
+  <div *ngIf="isLoading" class="text-center py-5">
+    <div class="spinner-border text-primary"></div>
+  </div>
+  <div *ngIf="!isLoading && enrolledCourses.length === 0" class="text-center py-5 text-muted">
+    <h5>You haven't enrolled in any courses yet.</h5>
+    <a routerLink="/courses" class="btn btn-primary mt-2">Browse Courses</a>
+  </div>
+  <div class="row" *ngIf="!isLoading">
+    <div class="col-md-4 mb-4" *ngFor="let course of enrolledCourses">
+      <div class="card shadow-sm h-100">
+        <img [src]="course.image" class="card-img-top" [alt]="course.title">
+        <div class="card-body">
+          <h5 class="card-title">{{ course.title }}</h5>
+          <p class="text-muted small">{{ course.instructor }}</p>
+          <div class="d-flex justify-content-between mt-3">
+            <a [routerLink]="['/courses', course.id]" class="btn btn-outline-primary btn-sm">View</a>
+            <button class="btn btn-outline-danger btn-sm" (click)="unenroll(course.id)">Unenroll</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
